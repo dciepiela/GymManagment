@@ -1,0 +1,6 @@
+C:\Users\mimia\Desktop\WWSI\III semestr\Języki i paradygmaty programowania\Laboratoria\Projekt\Gym\GUITools\bin\Debug\GUITools.dll
+C:\Users\mimia\Desktop\WWSI\III semestr\Języki i paradygmaty programowania\Laboratoria\Projekt\Gym\GUITools\bin\Debug\GUITools.pdb
+C:\Users\mimia\Desktop\WWSI\III semestr\Języki i paradygmaty programowania\Laboratoria\Projekt\Gym\GUITools\obj\Debug\GUITools.csproj.AssemblyReference.cache
+C:\Users\mimia\Desktop\WWSI\III semestr\Języki i paradygmaty programowania\Laboratoria\Projekt\Gym\GUITools\obj\Debug\GUITools.csproj.CoreCompileInputs.cache
+C:\Users\mimia\Desktop\WWSI\III semestr\Języki i paradygmaty programowania\Laboratoria\Projekt\Gym\GUITools\obj\Debug\GUITools.dll
+C:\Users\mimia\Desktop\WWSI\III semestr\Języki i paradygmaty programowania\Laboratoria\Projekt\Gym\GUITools\obj\Debug\GUITools.pdb

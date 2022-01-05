@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "da459fb6-0d19-43f8-870e-2dffba8894c3": {
+      "ProjectGuid": "da459fb6-0d19-43f8-870e-2dffba8894c3",
+      "DisplayName": "GymManagmentSystem",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Różne pliki",
+      "ColorIndex": -1
+    },
+    "0729807e-f2f8-443d-95a5-22bfa80ee9e0": {
+      "ProjectGuid": "0729807e-f2f8-443d-95a5-22bfa80ee9e0",
+      "DisplayName": "GUITools",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
