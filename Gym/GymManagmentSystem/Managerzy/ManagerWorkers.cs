@@ -1,5 +1,4 @@
-﻿using GymManagmentSystem.Customers;
-using GymManagmentSystem.Workers;
+﻿using GymManagmentSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,6 +49,10 @@ namespace GymManagmentSystem.Managerzy
             {
                 for (int i = 0; i < numberOfWorkers; i++)
                 {
+                    if(workers[i] == null)
+                    {
+                        continue;
+                    }
                     Console.WriteLine($"{i + 1}. {workers[i].firstName} {workers[i].lastName} {workers[i].phone} {workers[i].function} {workers[i].Salary} $");
                 }
                 Console.ReadKey();
@@ -100,7 +103,29 @@ namespace GymManagmentSystem.Managerzy
 
         public override void Remove()
         {
-            
+            Title("Usuń pracownika spośród widocznych poniżej");
+            List();
+
+            if (numberOfWorkers > 0)
+            {
+                numberOfWorkers--;
+                Console.WriteLine("Którego pracownika chcesz usunąć z klubu?");
+                int indexOfWorker = Convert.ToInt32(Console.ReadLine()) - 1;
+                var newWorkersArr = new Worker[workers.Length];
+                for (int i = 0; i < workers.Length; i++)
+                {
+                    if (i == indexOfWorker)
+                    {
+                        continue;
+                    }
+                    newWorkersArr.Append(workers[i]);
+                }
+                workers = newWorkersArr;
+            }
+            else
+            {
+                Console.WriteLine("Niestety numer pracownika jest nieprawidłowy.");
+            }
         }
     }
 }

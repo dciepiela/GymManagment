@@ -4,20 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GymManagmentSystem.Workers
+namespace GymManagmentSystem.Models
 {
-    internal class Worker
+    internal class Customer
     {
         public string firstName;
         public string lastName;
         public string address;
         public string phone;
         public string email;
-        public string function;
-        private double salary;
+        public Customer()
+        {
 
-        public double Salary { get => salary; set => salary = value; }
-
-       
+        }
     }
 }

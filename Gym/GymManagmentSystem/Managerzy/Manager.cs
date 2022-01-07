@@ -1,11 +1,10 @@
-﻿using System;
+﻿using GymManagmentSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GymManagmentSystem.Workers;
-using GymManagmentSystem.Customers;
-using GymManagmentSystem.Equipments;
+
 
 namespace GymManagmentSystem.Managerzy
 {
@@ -38,8 +37,6 @@ namespace GymManagmentSystem.Managerzy
             Console.Clear();
             Console.WriteLine($"******** {title.ToUpper()} ********");
             Console.WriteLine();
-
         }
-
     }
 }

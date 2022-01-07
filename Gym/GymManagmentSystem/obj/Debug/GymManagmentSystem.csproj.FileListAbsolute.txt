@@ -9,3 +9,13 @@ C:\Users\mimia\Desktop\WWSI\III semestr\Języki i paradygmaty programowania\Labo
 C:\Users\mimia\Desktop\WWSI\III semestr\Języki i paradygmaty programowania\Laboratoria\Projekt\Gym\GymManagmentSystem\obj\Debug\GymManagmentSystem.csproj.CopyComplete
 C:\Users\mimia\Desktop\WWSI\III semestr\Języki i paradygmaty programowania\Laboratoria\Projekt\Gym\GymManagmentSystem\obj\Debug\GymManagmentSystem.exe
 C:\Users\mimia\Desktop\WWSI\III semestr\Języki i paradygmaty programowania\Laboratoria\Projekt\Gym\GymManagmentSystem\obj\Debug\GymManagmentSystem.pdb
+C:\Users\nitro\source\repos\GymManagment-\Gym\GymManagmentSystem\bin\Debug\GymManagmentSystem.exe.config
+C:\Users\nitro\source\repos\GymManagment-\Gym\GymManagmentSystem\bin\Debug\GymManagmentSystem.exe
+C:\Users\nitro\source\repos\GymManagment-\Gym\GymManagmentSystem\bin\Debug\GymManagmentSystem.pdb
+C:\Users\nitro\source\repos\GymManagment-\Gym\GymManagmentSystem\bin\Debug\GUITools.dll
+C:\Users\nitro\source\repos\GymManagment-\Gym\GymManagmentSystem\bin\Debug\GUITools.pdb
+C:\Users\nitro\source\repos\GymManagment-\Gym\GymManagmentSystem\obj\Debug\GymManagmentSystem.csproj.AssemblyReference.cache
+C:\Users\nitro\source\repos\GymManagment-\Gym\GymManagmentSystem\obj\Debug\GymManagmentSystem.csproj.CoreCompileInputs.cache
+C:\Users\nitro\source\repos\GymManagment-\Gym\GymManagmentSystem\obj\Debug\GymManagmentSystem.csproj.CopyComplete
+C:\Users\nitro\source\repos\GymManagment-\Gym\GymManagmentSystem\obj\Debug\GymManagmentSystem.exe
+C:\Users\nitro\source\repos\GymManagment-\Gym\GymManagmentSystem\obj\Debug\GymManagmentSystem.pdb

@@ -43,15 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers\Customer.cs" />
-    <Compile Include="Equipments\Equipment.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Equipment.cs" />
     <Compile Include="Managerzy\Manager.cs" />
     <Compile Include="Managerzy\ManagerCustomers.cs" />
     <Compile Include="Managerzy\ManagerEquipments.cs" />
     <Compile Include="Managerzy\ManagerWorkers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Workers\Worker.cs" />
+    <Compile Include="Models\Worker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

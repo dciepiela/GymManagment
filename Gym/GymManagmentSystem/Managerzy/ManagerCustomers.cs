@@ -1,9 +1,6 @@
-﻿using GymManagmentSystem.Customers;
+﻿using GymManagmentSystem.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GymManagmentSystem.Managerzy
 {
@@ -37,6 +34,10 @@ namespace GymManagmentSystem.Managerzy
             {
                 for (int i = 0; i < numberOfCustomers; i++)
                 {
+                    if(customers[i] is null)
+                    {
+                        continue;
+                    }
                     Console.WriteLine($"{i + 1}. {customers[i].firstName} {customers[i].lastName} {customers[i].phone}");
                 }
                 Console.ReadKey();
@@ -89,25 +90,18 @@ namespace GymManagmentSystem.Managerzy
             if(numberOfCustomers > 0)
             {
                 Console.WriteLine("Którego członka chcesz usunąć z klubu?");
-                int indexOfCustomer = Convert.ToInt32(Console.ReadLine());
-                if (indexOfCustomer <= numberOfCustomers && indexOfCustomer > 0)
+                int indexOfCustomer = Convert.ToInt32(Console.ReadLine()) - 1;
+                var newCustomersArr = new Customer[customers.Length];
+                numberOfCustomers--;
+                for (int i = 0; i < customers.Length; i++)
                 {
-                    for (int i = 1; i <= indexOfCustomer; i++)
+                    if(i == indexOfCustomer )
                     {
-                        if(i == indexOfCustomer )
-                        {
-                            
-                            Console.ReadKey();
-                            //Console.WriteLine($"Wybrałeś: {customers[indexOfCustomer - 1].firstName} {customers[indexOfCustomer - 1].lastName}");
-
-                            //Console.Write("Imie      :"); customers[indexOfCustomer - 1].firstName = Console.ReadLine();
-                            //Console.Write("Nazwisko  :"); customers[indexOfCustomer - 1].lastName = Console.ReadLine();
-                            //Console.Write("Adres   : "); customers[indexOfCustomer - 1].address = Console.ReadLine();
-                            //Console.Write("Telefon : "); customers[indexOfCustomer - 1].phone = Console.ReadLine();
-                            //Console.Write("Email   : "); customers[indexOfCustomer - 1].email = Console.ReadLine();
-                        }
+                        continue;
                     }
+                    newCustomersArr.Append(customers[i]);
                 }
+                customers = newCustomersArr;
             }
             else
             {

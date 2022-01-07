@@ -1,10 +1,6 @@
-﻿using GymManagmentSystem.Customers;
-using GymManagmentSystem.Equipments;
+﻿using GymManagmentSystem.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GymManagmentSystem.Managerzy
 {
@@ -18,7 +14,6 @@ namespace GymManagmentSystem.Managerzy
         {
             try
             {
-
                 Title("panel dodawania nowego sprzętu na siłowni");
                 Equipment equipment = new Equipment();
                 Console.Write("Nazwa : "); equipment.name = Console.ReadLine();
@@ -40,10 +35,15 @@ namespace GymManagmentSystem.Managerzy
         public override void List()
         {
             Title("Lista dostępnych sprzętów na siłowni");
+            
             if (numberOfEquipments > 0)
             {
                 for (int i = 0; i < numberOfEquipments; i++)
                 {
+                    if(equipments[i] is null)
+                    {
+                        continue;
+                    }
                     Console.WriteLine($"{i + 1}. {equipments[i].name} {equipments[i].Value}$");
                 }
                 Console.ReadKey();
@@ -83,6 +83,33 @@ namespace GymManagmentSystem.Managerzy
                 }
             }
             Console.ReadKey();
+        }
+
+        public override void Remove()
+        {
+            Title("Usuń sprzęt spośród widocznych poniżej");
+            List();
+
+            if (numberOfEquipments > 0)
+            {
+                Console.WriteLine("Który sprzęt chcesz usunąć z klubu?");
+                int indexOfEquipment = Convert.ToInt32(Console.ReadLine()) - 1;
+                var newEquipmentsArr = new Equipment[equipments.Length];
+                numberOfEquipments--;
+                for (int i = 0; i < equipments.Length; i++)
+                {
+                    if (i == indexOfEquipment)
+                    {
+                        continue;
+                    }
+                    newEquipmentsArr.Append(equipments[i]);
+                }
+                equipments = newEquipmentsArr;
+            }
+            else
+            {
+                Console.WriteLine("Niestety numer pracownika jest nieprawidłowy.");
+            }
         }
     }
 }

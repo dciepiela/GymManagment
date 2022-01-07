@@ -23,6 +23,7 @@ namespace GymManagmentSystem
                 Console.WriteLine("Zalogowano pomyślnie");
                 System.Threading.Thread.Sleep(1000);
                 Menu menu = new Menu();
+
                 ManagerCustomers customers = new ManagerCustomers(20);
                 ManagerWorkers workers = new ManagerWorkers(20);
                 ManagerEquipments equipments = new ManagerEquipments(20);
@@ -124,13 +125,13 @@ namespace GymManagmentSystem
                             {
                                 Console.Clear();
                                 Console.WriteLine("Usuwanie pracownika klubu");
-                                Console.ReadKey();
+                                workers.Remove();
                             }
                             else if (decisionToRemove == 2)
                             {
                                 Console.Clear();
                                 Console.WriteLine("Usuwanie sprzętu w klubie");
-                                Console.ReadKey();
+                                equipments.Remove();
                             }
                         }
                         while (decisionToRemove != -1 && decisionToRemove != 3);
